@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Hoja de Vida</title>
+</head>
+
+<body>
+    <div class="cv">
+        <header>
+            <div class="content-header shadow">
+                <div class="logo">
+                    <img src="images/escudo.png" alt="escudo-colombia.jpg">
+                </div>
+                <div class="titles">
+                    <h2 class="m1">FORMATO ÚNICO</h2>
+                    <h1 class="m1">HOJA DE VIDA</h1>
+                    <h3 class="m1">Persona Natural</h3>
+                    <p class="m1">(Leyes 190 de 1995, 489 y 443 de 1998)</p>
+                </div>
+                <div class="receiving-entity">
+                    <label>ENTIDAD RECEPTORA</label>
+                    <input type="text" name="receiving-entity" required>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <article>
+                <header class="article-header">
+                    <h3>1. DATOS PERSONALES</h3>
+                </header>
+
+                <div class="content-data shadow">
+
+                    <div class="section1 border">
+                        <div class="row1">
+                            <div class="border">
+                                <label class="display-block">PRIMER APELLIDO</label>
+                                <input type="text" name="last-name1" id="last-name1">
+                            </div>
+
+                            <div class="border">
+                                <label class="display-block">SEGUNDO APELLIDO (O DE CASADA)</label>
+                                <input type="text" name="last-name2" id="last-name2">
+                            </div>
+
+                            <div class="border">
+                                <label class="display-block">NOMBRES</label>
+                                <input type="text" name="names" id="names">
+                            </div>
+                        </div>
+
+                        <div class="row2">
+
+                            <div class="col-1 border">
+
+                                <div>
+                                    <label>DOCUMENTO DE INDENTIFICAIÓN</label>
+                                </div>
+
+                                <div class="display-flex">
+                                    <div>
+                                        <label>C.C</label>
+                                        <input type="radio" name="cc" id="cc">
+                                    </div>
+
+                                    <div>
+                                        <label>C.E</label>
+                                        <input type="radio" name="ce" id="ce">
+                                    </div>
+
+                                    <div>
+                                        <label>PAS</label>
+                                        <input type="radio" name="pas" id="pas">
+                                    </div>
+
+                                    <div class="display-flex pl1">
+                                        <label>No.</label>
+                                        <input type="text" name="id-number" id="id-number">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="sex col-2 border">
+                                <label>SEXO</label>
+
+                                <div class="display-flex">
+                                    <div>
+                                        <label>F</label>
+                                        <input type="radio" name="female" id="female">
+                                    </div>
+                                    <div>
+                                        <label>M</label>
+                                        <input type="radio" name="male" id="male">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="nation col-3 border display-flex">
+                                <div class="nationality">
+                                    <label>NACIONALIDAD</label>
+
+                                    <div class="display-flex">
+                                        <div>
+                                            <label>COL.</label>
+                                            <input type="radio" name="colombian" id="colombian">
+                                        </div>
+                                        <div>
+                                            <label>EXTRANJERO</label>
+                                            <input type="radio" name="foreingn" id="foreing">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="country-content pl2 display-block">
+                                    <label>PAÍS</label>
+                                    <input type="text" name="country" id="country">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row3 border">
+
+                            <div class="col-all">
+                                <label class="display-block">LIBRETA MILITAR</label>
+                            </div>
+
+                            <div class="col-1">
+                                <label>PRIMERA CLASE</label>
+                                <input type="radio" name="firstclass" id="firstclass">
+                            </div>
+
+                            <div class="col-2">
+                                <label>SEGUNDA CLASE</label>
+                                <input type="radio" name="secondclass" id="secondclass">
+                            </div>
+
+                            <div class="col-3 display-flex">
+                                <label>NÚMERO</label>
+                                <input type="text" name="military-card" id="military-card">
+                            </div>
+
+                            <div class="col-4 display-flex">
+                                <label>D.M</label>
+                                <input type="text" name="dm" id="dm">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section2 border pb1">
+                        <div class="row1">
+                            <label>FECHA Y LUGAR DE NACIMIENTO</label>
+
+                            <div class="display-flex mt1 pl2">
+                                <label>FECHA</label>
+                                <input type="date" name="date-birth" id="date-birth">
+                            </div>
+
+                            <div class="mt1 aling-center display-flex">
+                                <div class="mt1 pl2">
+                                    <label class="display-block">PAÍS</label>
+                                    <label class="display-block">DEPTO</label>
+                                    <label class="display-block">MUNICIPIO</label>
+                                </div>
+
+                                <div class="mt1 pl3">
+                                    <input class="display-block" type="text" name="country-birth" id="country-birth">
+                                    <input class="display-block" type="text" name="departament-birth"
+                                        id="departament-birth">
+                                    <input class="display-block" type="text" name="municipality-birth"
+                                        id="municipality-birth">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section3 border pb1">
+                        <div class="pl1">
+                            <div class="mt1">
+                                <label class="display-block">DIRECCIÓN DE CORRESPONDENCIA</label>
+                                <input type="text" name="address" id="address">
+                            </div>
+
+                            <div class="mt1">
+                                <div class="display-flex">
+                                    <div class="display-flex">
+                                        <label>PAÍS</label>
+                                        <input type="text" name="addresscountry" id="addresscountry">
+                                    </div>
+
+                                    <div class="display-flex pl1">
+                                        <label>DEPTO</label>
+                                        <input type="text" name="addressdep" id="addressdep">
+                                    </div>
+                                </div>
+
+                                <div class="display-flex mt1">
+                                    <label>MUNICIPIO</label>
+                                    <input type="text" name="addressmuni" id="addressmuni">
+                                </div>
+
+                                <div class="display-flex mt1">
+                                    <div class="display-flex">
+                                        <label>TELÉFONO</label>
+                                        <input type="text" name="telephone" id="telephone">
+                                    </div>
+
+                                    <div class="display-flex pl1">
+                                        <label>EMAIL</label>
+                                        <input type="email" name="email" id="email">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <header class="article-header">
+                    <h3>2. FORMACIÓN ACADÉMICA</h3>
+                </header>
+
+                <div class="content-data shadow">
+
+                    <div class="formation-section1 border pb1 p1">
+
+                        <div class="row1">
+                            <label class="bold">EDUCACIÓN BÁSICA Y MEDIA</label>
+                            <p>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO
+                                EQUIVALEN A LOS GRADOS 6o. A 11o. DE EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</p>
+                        </div>
+
+                        <div class="row2">
+
+                            <div class="col-1">
+
+                                <div class="border p1 text-center header">
+                                    <p class="m0">EDUCACIÓN BÁSICA</p>
+                                </div>
+
+                                <div class="stages">
+
+                                    <div class="border">
+
+                                        <div class="border p1 text-center header">
+                                            <p class="m0">PRIMARIA</p>
+                                        </div>
+
+                                        <div class="primary text-center">
+                                            <div class="border">
+                                                <p class="m0">1o.</p>
+                                                <input type="radio" name="onegrade" id="onegrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">2o.</p>
+                                                <input type="radio" name="twograde" id="twograde">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">3o.</p>
+                                                <input type="radio" name="threegrade" id="threegrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">4o.</p>
+                                                <input type="radio" name="fourgrade" id="fourgrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">5o.</p>
+                                                <input type="radio" name="fivegrade" id="fivegrade">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border">
+                                        <div class="border p1 text-center header">
+                                            <p class="m0">SECUNDARIA</p>
+                                        </div>
+
+                                        <div class="secondary text-center">
+                                            <div class="border">
+                                                <p class="m0">6o.</p>
+                                                <input type="radio" name="sixgrade" id="sixgrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">7o.</p>
+                                                <input type="radio" name="sevengrade" id="sevengrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">8o.</p>
+                                                <input type="radio" name="eightgrade" id="eightgrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">9o.</p>
+                                                <input type="radio" name="ninegrade" id="ninegrade">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="border">
+                                        <div class="border p1 text-center header">
+                                            <p class="m0">MEDIA</p>
+                                        </div>
+
+                                        <div class="middle text-center">
+                                            <div class="border">
+                                                <p class="m0">10</p>
+                                                <input type="radio" name="tengrade" id="tengrade">
+                                            </div>
+                                            <div class="border">
+                                                <p class="m0">11</p>
+                                                <input type="radio" name="elevengrade" id="elevengrade">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-2">
+
+                                <div class="border p1">
+                                    <label>TÍTULO OBTENIDO: </label>
+                                    <input type="text" name="title" id="title">
+                                </div>
+
+                                <div class="border p1 header p1">
+                                    <p class="m0">FECHA DE GRADO</p>
+                                </div>
+                                <div class="border text-center p2">
+                                    <input type="date" name="grade-date" id="grade-date">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formation-section2 border p1">
+
+                        <div>
+                            <label class="bold">EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)</label>
+
+                            <div>
+                                <p>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:
+                                </p>
+
+                                <div class="row1">
+                                    <div>
+                                        <p><span class="bold">TC</span> (TÉCNICA),</p>
+                                        <p><span class="bold">ES</span> (ESPECIALIZACIÓN)</p>
+                                    </div>
+                                    <div>
+                                        <p><span class="bold">TL</span> (TECNOLÓGICA),</p>
+                                        <p><span class="bold">MG</span> (MAESTRÍA O MAGISTER)</p>
+                                    </div>
+                                    <div>
+                                        <p><span class="bold">TE</span> (TECNOLÓGICA ESPECIALIZADA),</p>
+                                        <p><span class="bold">DOC</span> (DOCTORADO O PHD),</p>
+                                    </div>
+                                    <div>
+                                        <p><span class="bold">UN</span> (UNIVERSITARIA)</p>
+                                    </div>
+                                </div>
+
+                                <p>RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN
+                                    UNA LEY).</p>
+                            </div>
+                        </div>
+
+                        <div class="row2">
+                            <div class="col-1 text-center border">
+                                <div class="border header">
+                                    <label>MODALIDAD ACADÉMICA</label>
+                                </div>
+
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                            </div>
+
+                            <div class="col-2 text-center border">
+                                <div class="border header">
+                                    <label>No.SEMESTRES APROBADOS</label>
+                                </div>
+
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                            </div>
+
+                            <div class="col-3 text-center border">
+                                <div class="border header">
+                                    <label>GRADUADO</label>
+                                </div>
+
+                                <div class="graduate text-center">
+                                    <div>
+                                        <div class="border header">
+                                            <label>SI</label>
+                                        </div>
+
+                                        <div class="text-center">
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="border header">
+                                            <label>NO</label>
+                                        </div>
+
+                                        <div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                            <div class="border"><input type="radio"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 text-center border">
+                                <div class="border header">
+                                    <label>NOMBRE DE LOS ESTUDIOS O TÍTULO OBTENIDO</label>
+                                </div>
+
+                                <div class="border"><input type="text" class="large-input"></div>
+                                <div class="border"><input type="text" class="large-input"></div>
+                                <div class="border"><input type="text" class="large-input"></div>
+                                <div class="border"><input type="text" class="large-input"></div>
+                                <div class="border"><input type="text" class="large-input"></div>
+                            </div>
+
+                            <div class="col-5 text-center border">
+                                <div class="border header">
+                                    <label>TERMINACIÓN</label>
+                                </div>
+
+                                <div>
+                                    <div class="border header">
+                                        <label>FECHA</label>
+                                    </div>
+
+                                    <div class="border"><input type="date" class="small-input-date"></div>
+                                    <div class="border"><input type="date" class="small-input-date"></div>
+                                    <div class="border"><input type="date" class="small-input-date"></div>
+                                    <div class="border"><input type="date" class="small-input-date"></div>
+                                    <div class="border"><input type="date" class="small-input-date"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 text-center border">
+                                <div class="border header">
+                                    <label>No. DE TARJETA PROFESIONAL</label>
+                                </div>
+
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                                <div class="border"><input type="text" class="small-input"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formation-section3 border pb1">
+                        <div class="row1">
+                            <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (<span class="bold">R</span>), BIEN (<span class="bold">B</span>) O MUY BIEN (<span class="bold">MB</span>)</p>
+                        </div>
+
+                        <div class="row2 border text-center">
+                            <div class="col-1 border">
+                                <label class="display-block p3 border header">IDIOMA</label>
+
+                                <div class="border">
+                                    <input type="text">
+                                </div>
+                                <div class="border">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <div class="col-2 border">
+                                <label class="display-block header border">LO HABLA</label>
+
+                                <div class="speaking">
+                                    <div>
+                                        <div class="header border">
+                                            <label>R</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>B</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>MB</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-3 border">
+                                <label class="display-block header border">LO LEE</label>
+
+                                <div class="reading">
+                                    <div>
+                                        <div class="header border">
+                                            <label>R</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>B</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>MB</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-4 border">
+                                <label class="display-block header border">LO ESCRIBE</label>
+
+                                <div class="writing">
+                                    <div>
+                                        <div class="header border">
+                                            <label>R</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>B</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="header border">
+                                            <label>MB</label>
+                                        </div>
+
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                        <div class="border">
+                                            <input type="radio">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>

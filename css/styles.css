@@ -1,0 +1,280 @@
+/*------------------------GENERAL STYLES------------------------*/
+.cv {
+    background-color: #fff;
+    margin: 50px 100px 20px 100px;
+    padding: 20px 0px 20px 0px;
+}
+body {
+    background-color: #4F4F4F;
+    margin: 0;
+    padding: 0;
+}
+.m1 {
+    margin: 2px;
+}
+.mt1 {
+    margin-top: 15px;
+}
+.m0 {
+    margin: 0;
+}
+.wnumber {
+    width: 25px;
+}
+.pl1 {
+    padding-left: 10px;
+}
+.pl2 {
+    padding-left: 20px;
+}
+.pl3 {
+    padding-left: 30px;
+}
+.pb1 {
+    padding-bottom: 10px;
+}
+.p1 {
+    padding: 4px;
+}
+.p2 {
+    padding: 6px;
+}
+.p3 {
+    padding: 10px;
+}
+.text-center {
+    text-align: center;
+}
+.m-auto {
+    margin: 0 auto;
+}
+.my2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.display-block {
+    display: block;
+}
+.display-flex {
+    display: flex;
+}
+.border {
+    border: solid #000 1px;
+}
+.shadow {
+    -webkit-box-shadow: 10px 10px 0px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 10px 10px 0px -3px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0px -3px rgba(0,0,0,1);
+}
+
+/*-----------------------CONTENT HEADER-----------------------*/
+.content-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10px 100px 20px 100px;
+    border-radius: 20px;
+    border: solid #000 1px;
+}
+.logo img{
+    width: 120px;
+}
+.logo {
+    text-align: end;
+}
+.titles {
+    text-align: center;
+}
+.receiving-entity {
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);
+    grid-template-rows: repeat(2, 0.2fr);
+    padding-top: 20px;
+}
+.article-header {
+    background-color: #000;
+    width: 30%;
+    height: 25px;
+    color: #fff;
+    border-radius: 15px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.article-header h3 {
+    padding: 4px;
+}
+
+/*---------------------------------------------*/
+article {
+    margin: 0px 90px 0px 90px;
+}
+
+.content-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #50c2ca3f;
+}
+.header {
+    background-color: #0097c54f;
+}
+
+/*-----------------------PERSONAL DATA SECTION1 -----------*/
+.section1 {
+    display: grid;
+    grid-column: 1/4;
+}
+.section1 > .row1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50px;
+}
+.section1 > .row2 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.section1 .row2 >.col-1 {
+    grid-column: 1/5;
+}
+.section1 .row2 > .col-2 {
+    grid-column: 5/6;
+}
+.section1 .row2 > .col-3 {
+    grid-column: 6/9;
+}
+.section1 > .row3 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.col-all {
+    grid-column: 1/8;
+}
+.section1 .row3 > .col-1 {
+    grid-column: 1/3;
+}
+.section1 .row3 > .col-2 {
+    grid-column: 3/5;
+}
+.section1 .row3 > .col-3 {
+    grid-column: 5/9;
+}
+.section1 .row3 > .col-4 {
+    grid-column: 9/10;
+}
+/*-----------------------PERSONAL DATA SECTION2 -----------*/
+.section2 {
+    grid-column: 1/3;
+}
+
+
+/*--------------------ACADEMIC FORMATION--------------------*/
+.formation-section1, .formation-section2 {
+    grid-column: 1/4;
+}
+.formation-section1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.formation-section1 > .row1 {
+    grid-column: 1/11;
+}
+.formation-section1 > .row2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2/10;
+}
+.stages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.primary {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.secondary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.middle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.formation-section2  .row1 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.formation-section2  .row2 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+.graduate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.formation-section2  .row2  .col-1 {
+    grid-column: 1/2;
+}
+.formation-section2  .row2  .col-2 {
+    grid-column: 2/3;
+}
+.formation-section2  .row2  .col-3 {
+    grid-column: 3/4;
+}
+.formation-section2  .row2  .col-4 {
+    grid-column: 4/9;
+}
+.formation-section2  .row2  .col-5 {
+    grid-column: 9/11;
+}
+.formation-section2  .row2  .col-6 {
+    grid-column: 11/13;
+}
+.small-input {
+    width: 90%;
+}
+.small-input-date {
+    width: 90%;
+    height: 16px;
+}
+.bold {
+    font-weight: bold;
+}
+.large-input {
+    width: 95%;
+}
+.formation-section3 {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+.formation-section3 .row1 {
+    grid-column: 1/12;
+}
+.formation-section3 .row2 {
+    grid-column: 3/9;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+.formation-section3 .row2 .col-1 {
+    grid-column: 1/6;
+}
+.formation-section3 .row2 .col-2 {
+    grid-column: 6/8;
+}
+.formation-section3 .row2 .col-3 {
+    grid-column: 8/10;
+}
+.formation-section3 .row2 .col-4 {
+    grid-column: 10/12;
+}
+.formation-section3 .row2 .col-2 .speaking {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.formation-section3 .row2 .col-3 .reading {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.formation-section3 .row2 .col-4 .writing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
