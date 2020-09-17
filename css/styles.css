@@ -1,5 +1,6 @@
 /*------------------------GENERAL STYLES------------------------*/
 .cv {
+    width: 1150px;
     background-color: #fff;
     margin: 50px 100px 20px 100px;
     padding: 20px 0px 20px 0px;
@@ -30,8 +31,23 @@ body {
 .pl3 {
     padding-left: 30px;
 }
+.pl4 {
+    padding-left: 50px;
+}
 .pb1 {
     padding-bottom: 10px;
+}
+.pr1 {
+    padding-right: 15px;
+}
+.pr3 {
+    padding-right: 70px;
+}
+.pt1 {
+    padding-top: 2px;
+}
+.pt2 {
+    padding-top: 5px;
 }
 .p1 {
     padding: 4px;
@@ -52,7 +68,9 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
+.mb1 {
+    margin-bottom: 10px;
+}
 .display-block {
     display: block;
 }
@@ -68,42 +86,75 @@ body {
     box-shadow: 10px 10px 0px -3px rgba(0,0,0,1);
 }
 
+.transparent-input {
+    border: none;
+    background-color: #d4f0f2;
+}
+.bottom-line-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: #d4f0f2;
+}
+
 /*-----------------------CONTENT HEADER-----------------------*/
 .content-header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 10px 100px 20px 100px;
+    padding: 15px;
     border-radius: 20px;
     border: solid #000 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .logo img{
     width: 120px;
 }
 .logo {
-    text-align: end;
+    text-align: center;
 }
 .titles {
     text-align: center;
 }
 .receiving-entity {
-    display: grid;
-    grid-template-columns: repeat(1, 0.5fr);
-    grid-template-rows: repeat(2, 0.2fr);
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-left: 80px;
+}
+.receiving-entity input{
+    height: 30px;
+    width: 230px;
 }
 .article-header {
-    background-color: #000;
-    width: 30%;
-    height: 25px;
-    color: #fff;
-    border-radius: 15px;
+    display: flex;
     margin-top: 70px;
     margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.article-header h3 {
-    padding: 4px;
+.article-header h3{
+    background-color: #000;
+    color: #fff;
+    border-radius: 35px;
+    width: 30%;
+    margin: 0;
 }
-
+.article-header span {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.article-header hr {
+    display: flex;
+    height: 3px;
+    width: 1%;
+    margin: 12px 0px 0px 0px;
+    background-color: #007fa5;
+}
 /*---------------------------------------------*/
 article {
     margin: 0px 90px 0px 90px;
