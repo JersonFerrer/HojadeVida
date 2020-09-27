@@ -10,15 +10,6 @@ body {
     margin: 0;
     padding: 0;
 }
-.m1 {
-    margin: 2px;
-}
-.mt1 {
-    margin-top: 15px;
-}
-.m0 {
-    margin: 0;
-}
 .wnumber {
     width: 25px;
 }
@@ -49,6 +40,9 @@ body {
 .pt2 {
     padding-top: 5px;
 }
+.pt3 {
+    padding-top: 15px;
+}
 .p1 {
     padding: 4px;
 }
@@ -57,6 +51,12 @@ body {
 }
 .p3 {
     padding: 10px;
+}
+.p4 {
+    padding: 5px;
+}
+.p5 {
+    padding: 12px;
 }
 .text-center {
     text-align: center;
@@ -70,6 +70,15 @@ body {
 }
 .mb1 {
     margin-bottom: 10px;
+}
+.m1 {
+    margin: 2px;
+}
+.mt1 {
+    margin-top: 15px;
+}
+.m0 {
+    margin: 0;
 }
 .display-block {
     display: block;
@@ -98,7 +107,30 @@ body {
 .ui-widget input {
     font-size: 14px;
 }
-
+.border-rigth {
+    border-right: 1px solid #000;
+}
+.border-left {
+    border-left: 1px solid #000;
+}
+.border-top {
+    border-top: 1px solid #000;
+}
+.b-radius-tl {
+    border-top-left-radius: 20px;
+}
+.b-radius-tr {
+    border-top-right-radius: 20px;
+}
+.b-radius-bl {
+    border-bottom-left-radius: 20px;
+}
+.b-radius-br {
+    border-bottom-right-radius: 20px;
+}
+.cell-stage {
+    padding: 5px 10px 5px 10px;
+}
 /*-----------------------CONTENT HEADER-----------------------*/
 .content-header {
     display: grid;
@@ -142,6 +174,9 @@ article {
 }
 .ui-accordion .ui-accordion-header {
     display: flex;
+}
+.ui-widget-content {
+    color: #000;
 }
 .article-header {
     margin-top: 70px;
@@ -246,6 +281,8 @@ article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column: 2/10;
+    border: 1px solid #000;
+    border-radius: 20px;
 }
 .stages {
     display: grid;
@@ -318,6 +355,7 @@ article {
     grid-column: 3/9;
     display: grid;
     grid-template-columns: repeat(11, 1fr);
+    border-radius: 20px;
 }
 .formation-section3 .row2 .col-1 {
     grid-column: 1/6;
