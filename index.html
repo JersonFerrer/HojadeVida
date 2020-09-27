@@ -14,86 +14,95 @@
 
 <body>
     <div class="cv">
-        <header>
-            <div class="content-header shadow">
-                <div class="logo">
-                    <img src="images/escudo.png" alt="escudo-colombia.jpg">
-                </div>
-                <div class="titles">
-                    <h2 class="m1">FORMATO ÚNICO</h2>
-                    <h1 class="m1">HOJA DE VIDA</h1>
-                    <h3 class="m1">Persona Natural</h3>
-                    <p class="m1">(Leyes 190 de 1995, 489 y 443 de 1998)</p>
-                </div>
-                <div class="receiving-entity">
-                    <label>ENTIDAD RECEPTORA</label>
-                    <input type="text" name="receiving-entity" required>
-                </div>
-            </div>
-        </header>
+        <form action="data.php" method="POST"></form>
+            <header>
+                <div class="content-header shadow">
+                    <div class="logo">
+                        <img src="images/escudo.png" alt="escudo-colombia.jpg">
+                    </div>
+                    <div class="titles">
+                        <h2 class="m1">FORMATO ÚNICO</h2>
+                        <h1 class="m1">HOJA DE VIDA</h1>
+                        <h3 class="m1">Persona Natural</h3>
+                        <p class="m1">(Leyes 190 de 1995, 489 y 443 de 1998)</p>
+                    </div>
+                    <div class="receiving-entity">
+                        <label>ENTIDAD RECEPTORA</label>
+                        <input type="text" name="receiving-entity" required>
 
-        <main>
-            <form action="data.php" method="GET">
+                        <div id="date">
+                            
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
                 <div id="accordion">
                     <div class="article-header">
-                        <span>1</span><hr><h3>DATOS PERSONALES</h3>
+                        <span>1</span>
+                        <hr>
+                        <h3>DATOS PERSONALES</h3>
                     </div>
-                    
+
                     <article>
                         <div class="content-data shadow">
-    
+
                             <div class="section1 border">
                                 <div class="row1">
                                     <div class="border">
                                         <label class="display-block p1">PRIMER APELLIDO</label>
-                                        <input type="text" name="last-name1" id="last-name1" class="transparent-input large-input">
+                                        <input type="text" name="last-name1" id="last-name1"
+                                            class="transparent-input large-input">
                                     </div>
-    
+
                                     <div class="border">
                                         <label class="display-block p1">SEGUNDO APELLIDO (O DE CASADA)</label>
-                                        <input type="text" name="last-name2" id="last-name2" class="transparent-input large-input">
+                                        <input type="text" name="last-name2" id="last-name2"
+                                            class="transparent-input large-input">
                                     </div>
-    
+
                                     <div class="border">
                                         <label class="display-block p1">NOMBRES</label>
                                         <input type="text" name="names" id="names" class="transparent-input large-input">
                                     </div>
                                 </div>
-    
+
                                 <div class="row2">
-    
+
                                     <div class="col-1 border">
-    
+
                                         <div class="p1">
                                             <label>DOCUMENTO DE INDENTIFICAIÓN</label>
                                         </div>
-    
+
                                         <div class="display-flex p1">
                                             <div>
                                                 <label>C.C</label>
                                                 <input type="radio" name="document" id="cc">
                                             </div>
-    
+
                                             <div>
                                                 <label>C.E</label>
                                                 <input type="radio" name="document" id="ce">
                                             </div>
-    
+
                                             <div>
                                                 <label>PAS</label>
                                                 <input type="radio" name="document" id="pas">
                                             </div>
-    
+
                                             <div class="display-flex pl1">
                                                 <label>No.</label>
-                                                <input type="text" name="id-number" id="id-number" class="bottom-line-input">
+                                                <input type="text" name="id-number" id="id-number"
+                                                    class="bottom-line-input">
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="sex col-2 border p1">
                                         <label>SEXO</label>
-    
+
                                         <div class="display-flex pt2">
                                             <div>
                                                 <label>F</label>
@@ -105,11 +114,11 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="nation col-3 border display-flex p1">
                                         <div class="nationality">
                                             <label>NACIONALIDAD</label>
-    
+
                                             <div class="display-flex">
                                                 <div>
                                                     <label>COL.</label>
@@ -121,7 +130,7 @@
                                                 </div>
                                             </div>
                                         </div>
-    
+
                                         <div class="country-content pl2 display-block">
                                             <div class="mb1">
                                                 <label>PAÍS</label>
@@ -130,96 +139,102 @@
                                         </div>
                                     </div>
                                 </div>
-    
+
                                 <div class="row3 border p1">
-    
+
                                     <div class="col-all">
                                         <label class="display-block">LIBRETA MILITAR</label>
                                     </div>
-    
+
                                     <div class="col-1">
                                         <label>PRIMERA CLASE</label>
                                         <input type="radio" name="card-type" id="firstclass">
                                     </div>
-    
+
                                     <div class="col-2">
                                         <label>SEGUNDA CLASE</label>
                                         <input type="radio" name="card-type" id="secondclass">
                                     </div>
-    
+
                                     <div class="col-3 display-flex pl4">
                                         <label>NÚMERO</label>
-                                        <input type="text" name="military-card" id="military-card" class="bottom-line-input large-input">
+                                        <input type="text" name="military-card" id="military-card"
+                                            class="bottom-line-input large-input">
                                     </div>
-    
+
                                     <div class="col-4 display-flex pl4">
                                         <label>D.M</label>
                                         <input type="text" name="dm" id="dm" class="bottom-line-input">
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="section2 border pb1">
                                 <div class="row1 mt1">
                                     <label class="p3">FECHA Y LUGAR DE NACIMIENTO</label>
-    
+
                                     <div class="display-flex mt1 pl2">
                                         <div class="pr3">
                                             <label>FECHA</label>
                                         </div>
                                         <input type="date" name="date-birth" id="date-birth" class="transparent-input">
                                     </div>
-    
+
                                     <div class="mt1 aling-center display-flex">
                                         <div class="pl2">
                                             <label class="display-block">PAÍS</label>
                                             <label class="display-block mt1">DEPTO</label>
                                             <label class="display-block mt1">MUNICIPIO</label>
                                         </div>
-    
+
                                         <div class="pl3">
                                             <input class="display-block bottom-line-input" type="text" name="country-birth"
                                                 id="country-birth">
-                                            <input class="display-block bottom-line-input mt1" type="text" name="departament-birth"
-                                                id="departament-birth">
-                                            <input class="display-block bottom-line-input mt1" type="text" name="municipality-birth"
-                                                id="municipality-birth">
+                                            <input class="display-block bottom-line-input mt1" type="text"
+                                                name="departament-birth" id="departament-birth">
+                                            <input class="display-block bottom-line-input mt1" type="text"
+                                                name="municipality-birth" id="municipality-birth">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="section3 border pb1 pr1">
                                 <div class="pl1">
                                     <div class="mt1">
                                         <label class="display-block">DIRECCIÓN DE CORRESPONDENCIA</label>
-                                        <input type="text" name="address" id="address" class="bottom-line-input large-input">
+                                        <input type="text" name="address" id="address"
+                                            class="bottom-line-input large-input">
                                     </div>
-    
+
                                     <div class="mt1">
                                         <div class="display-flex">
                                             <div class="display-flex">
                                                 <label>PAÍS</label>
-                                                <input type="text" name="addresscountry" id="addresscountry" class="bottom-line-input">
+                                                <input type="text" name="addresscountry" id="addresscountry"
+                                                    class="bottom-line-input">
                                             </div>
-    
+
                                             <div class="display-flex pl1">
                                                 <label>DEPTO</label>
-                                                <input type="text" name="addressdep" id="addressdep" class="bottom-line-input">
+                                                <input type="text" name="addressdep" id="addressdep"
+                                                    class="bottom-line-input">
                                             </div>
                                         </div>
-    
+
                                         <div class="display-flex mt1">
                                             <label>MUNICIPIO</label>
-                                            <input type="text" name="addressmuni" id="addressmuni" class="bottom-line-input">
+                                            <input type="text" name="addressmuni" id="addressmuni"
+                                                class="bottom-line-input">
                                         </div>
-    
+
                                         <div class="display-flex mt1">
                                             <div class="display-flex">
                                                 <label>TELÉFONO</label>
-                                                <input type="text" name="telephone" id="telephone" class="bottom-line-input">
+                                                <input type="text" name="telephone" id="telephone"
+                                                    class="bottom-line-input">
                                             </div>
-    
+
                                             <div class="display-flex pl1">
                                                 <label>EMAIL</label>
                                                 <input type="email" name="email" id="email" class="bottom-line-input">
@@ -232,35 +247,37 @@
                     </article>
 
                     <div class="article-header">
-                        <span>2</span><hr><h3>FORMACIÓN ACADÉMICA</h3>
+                        <span>2</span>
+                        <hr>
+                        <h3>FORMACIÓN ACADÉMICA</h3>
                     </div>
-                    <article>    
+                    <article>
                         <div class="content-data shadow">
-    
+
                             <div class="formation-section1 border pb1 p1">
-    
+
                                 <div class="row1">
                                     <label class="bold">EDUCACIÓN BÁSICA Y MEDIA</label>
                                     <p>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO
                                         EQUIVALEN A LOS GRADOS 6o. A 11o. DE EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</p>
                                 </div>
-    
+
                                 <div class="row2">
-    
+
                                     <div class="col-1">
-    
+
                                         <div class="border p1 text-center header">
                                             <p class="m0">EDUCACIÓN BÁSICA</p>
                                         </div>
-    
+
                                         <div class="stages">
-    
+
                                             <div class="border">
-    
+
                                                 <div class="border p1 text-center header">
                                                     <p class="m0">PRIMARIA</p>
                                                 </div>
-    
+
                                                 <div class="primary text-center">
                                                     <div class="border">
                                                         <p class="m0">1o.</p>
@@ -284,12 +301,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="border">
                                                 <div class="border p1 text-center header">
                                                     <p class="m0">SECUNDARIA</p>
                                                 </div>
-    
+
                                                 <div class="secondary text-center">
                                                     <div class="border">
                                                         <p class="m0">6o.</p>
@@ -309,12 +326,12 @@
                                                     </div>
                                                 </div>
                                             </div>
-    
+
                                             <div class="border">
                                                 <div class="border p1 text-center header">
                                                     <p class="m0">MEDIA</p>
                                                 </div>
-    
+
                                                 <div class="middle text-center">
                                                     <div class="border">
                                                         <p class="m0">10</p>
@@ -328,14 +345,14 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-2">
-    
+
                                         <div class="border p1">
                                             <label>TÍTULO OBTENIDO: </label>
                                             <input type="text" name="title" id="title" class="transparent-input">
                                         </div>
-    
+
                                         <div class="border p1 header p1">
                                             <p class="m0">FECHA DE GRADO</p>
                                         </div>
@@ -345,17 +362,17 @@
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="formation-section2 border p1">
-    
+
                                 <div>
                                     <label class="bold">EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)</label>
-    
+
                                     <div>
                                         <p>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA
                                             ESCRIBA:
                                         </p>
-    
+
                                         <div class="row1">
                                             <div>
                                                 <p><span class="bold">TC</span> (TÉCNICA),</p>
@@ -373,49 +390,59 @@
                                                 <p><span class="bold">UN</span> (UNIVERSITARIA)</p>
                                             </div>
                                         </div>
-    
+
                                         <p>RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA
                                             EN
                                             UNA LEY).</p>
                                     </div>
                                 </div>
-    
+
                                 <div class="row2">
                                     <div class="col-1 text-center border">
                                         <div class="border header">
                                             <label>MODALIDAD ACADÉMICA</label>
                                         </div>
-    
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
+
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
                                     </div>
-    
+
                                     <div class="col-2 text-center border">
                                         <div class="border header">
                                             <label>No.SEMESTRES APROBADOS</label>
                                         </div>
-    
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
+
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
                                     </div>
-    
+
                                     <div class="col-3 text-center border">
                                         <div class="border header">
                                             <label>GRADUADO</label>
                                         </div>
-    
+
                                         <div class="graduate text-center">
                                             <div>
                                                 <div class="border header">
                                                     <label>SI</label>
                                                 </div>
-    
+
                                                 <div class="text-center">
                                                     <div class="border"><input type="radio" name="graduate1"></div>
                                                     <div class="border"><input type="radio" name="graduate2"></div>
@@ -428,7 +455,7 @@
                                                 <div class="border header">
                                                     <label>NO</label>
                                                 </div>
-    
+
                                                 <div>
                                                     <div class="border"><input type="radio" name="graduate1"></div>
                                                     <div class="border"><input type="radio" name="graduate2"></div>
@@ -439,62 +466,77 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-4 text-center border">
                                         <div class="border header">
                                             <label>NOMBRE DE LOS ESTUDIOS O TÍTULO OBTENIDO</label>
                                         </div>
-    
-                                        <div class="border pt1"><input type="text" class="large-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="large-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="large-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="large-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="large-input transparent-input"></div>
+
+                                        <div class="border pt1"><input type="text" class="large-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="large-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="large-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="large-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="large-input transparent-input">
+                                        </div>
                                     </div>
-    
+
                                     <div class="col-5 text-center border">
                                         <div class="border header">
                                             <label>TERMINACIÓN</label>
                                         </div>
-    
+
                                         <div>
                                             <div class="border header">
                                                 <label>FECHA</label>
                                             </div>
-    
-                                            <div class="border pt1"><input type="date" class="small-input-date transparent-input"></div>
-                                            <div class="border pt1"><input type="date" class="small-input-date transparent-input"></div>
-                                            <div class="border pt1"><input type="date" class="small-input-date transparent-input"></div>
-                                            <div class="border pt1"><input type="date" class="small-input-date transparent-input"></div>
-                                            <div class="border pt1"><input type="date" class="small-input-date transparent-input"></div>
+
+                                            <div class="border pt1"><input type="date"
+                                                    class="small-input-date transparent-input"></div>
+                                            <div class="border pt1"><input type="date"
+                                                    class="small-input-date transparent-input"></div>
+                                            <div class="border pt1"><input type="date"
+                                                    class="small-input-date transparent-input"></div>
+                                            <div class="border pt1"><input type="date"
+                                                    class="small-input-date transparent-input"></div>
+                                            <div class="border pt1"><input type="date"
+                                                    class="small-input-date transparent-input"></div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-6 text-center border">
                                         <div class="border header">
                                             <label>No. DE TARJETA PROFESIONAL</label>
                                         </div>
-    
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
-                                        <div class="border pt1"><input type="text" class="small-input transparent-input"></div>
+
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
+                                        <div class="border pt1"><input type="text" class="small-input transparent-input">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-    
+
                             <div class="formation-section3 border pb1">
                                 <div class="row1">
                                     <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA,
                                         REGULAR (<span class="bold">R</span>), BIEN (<span class="bold">B</span>) O MUY BIEN
                                         (<span class="bold">MB</span>)</p>
                                 </div>
-    
+
                                 <div class="row2 border text-center">
                                     <div class="col-1 border">
                                         <label class="display-block p3 border header">IDIOMA</label>
-    
+
                                         <div class="border pt1">
                                             <input type="text" name="language" class="large-input transparent-input">
                                         </div>
@@ -502,16 +544,16 @@
                                             <input type="text" name="language" class="large-input transparent-input">
                                         </div>
                                     </div>
-    
+
                                     <div class="col-2 border">
                                         <label class="display-block header border">LO HABLA</label>
-    
+
                                         <div class="speaking">
                                             <div>
                                                 <div class="header border">
                                                     <label>R</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="speaking1">
                                                 </div>
@@ -519,12 +561,12 @@
                                                     <input type="radio" name="speaking2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>B</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="speaking1">
                                                 </div>
@@ -532,12 +574,12 @@
                                                     <input type="radio" name="speaking2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>MB</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="speaking1">
                                                 </div>
@@ -547,16 +589,16 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-3 border">
                                         <label class="display-block header border">LO LEE</label>
-    
+
                                         <div class="reading">
                                             <div>
                                                 <div class="header border">
                                                     <label>R</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="reading1">
                                                 </div>
@@ -564,12 +606,12 @@
                                                     <input type="radio" name="reading2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>B</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="reading1">
                                                 </div>
@@ -577,12 +619,12 @@
                                                     <input type="radio" name="reading2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>MB</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="reading1">
                                                 </div>
@@ -592,16 +634,16 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                     <div class="col-4 border">
                                         <label class="display-block header border">LO ESCRIBE</label>
-    
+
                                         <div class="writing">
                                             <div>
                                                 <div class="header border">
                                                     <label>R</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="writing1">
                                                 </div>
@@ -609,12 +651,12 @@
                                                     <input type="radio" name="writing2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>B</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="writing1">
                                                 </div>
@@ -622,12 +664,12 @@
                                                     <input type="radio" name="writing2">
                                                 </div>
                                             </div>
-    
+
                                             <div>
                                                 <div class="header border">
                                                     <label>MB</label>
                                                 </div>
-    
+
                                                 <div class="border">
                                                     <input type="radio" name="writing1">
                                                 </div>
@@ -642,8 +684,8 @@
                         </div>
                     </article>
                 </div>
-            </form>
-        </main>
+            </main>
+        </form>
     </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>
