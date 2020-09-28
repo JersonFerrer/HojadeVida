@@ -381,3 +381,13 @@ article {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/*----------------------FIRM-------------------*/
+.firm-container {
+    margin-left: 100px;
+}
+.firm {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 300px;
+}
